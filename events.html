@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات | دليل فعاليات الجامعة الافتراضية السورية</title>
+    
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header> 
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html">
+                دليل فعاليات الجامعة الافتراضية السورية
+            </a>
+            <a href="index.html">الرئيسية</a>
+            <a href="events.html">الفعاليات</a>
+            <a href="about.html">عن الدليل</a>
+            <a href="contact.html">اتصل بنا</a>
+
+        </div>
+    </nav>
+  <img src="assets/img/photo_2026-10-21_16-14-43.jpg" alt="شعار الجامعة" class="logo">
+  </header>
+<main class="container site-main">
+
+<h1>جميع الفعاليات</h1>
+<p class="text-center">ابحث عن فعالية حسب عنوانها أو تصنيفها أو موعدها أو مكانها.</p>
+<section aria-labelledby="filter-heading">
+    <h2 id="filter-heading">البحث والفلترة</h2>
+    <form id="filter-form" class="panel row g-3">
+        <div class="col-lg-4 col-md-6"><label for="search" class="form-label">كلمة البحث</label><input id="search" class="form-control" type="search" placeholder="عنوان الفعالية أو وصفها"></div>
+        <div class="col-lg-4 col-md-6"><label for="category" class="form-label">التصنيف</label><select id="category" class="form-select"><option value="">كل التصنيفات</option><option>ثقافة</option><option>رياضة</option><option>موسيقى</option><option>عائلي</option></select></div>
+        <div class="col-lg-4 col-md-6"><label for="location" class="form-label">الموقع</label><select id="location" class="form-select"><option value="">كل المواقع</option><option>دمشق</option><option>حلب</option><option>عبر الإنترنت</option></select></div>
+        <div class="col-md-4"><label for="date-from" class="form-label">من تاريخ</label><input id="date-from" class="form-control" type="date"></div>
+        <div class="col-md-4"><label for="date-to" class="form-label">إلى تاريخ</label><input id="date-to" class="form-control" type="date"></div>
+        <div class="col-md-4 d-flex align-items-end gap-2"><button type="submit" class="btn btn-primary">بحث</button><button type="reset" class="btn btn-outline-primary">مسح الفلاتر</button></div>
+        <div id="filter-error" class="alert alert-danger mb-0" role="alert" hidden>يجب أن يكون تاريخ النهاية مساويًا لتاريخ البداية أو بعده.</div>
+    </form>
+</section>
+<section aria-labelledby="results-heading">
+    <h2 id="results-heading">قائمة الفعاليات</h2>
+    <p id="results-count" role="status"></p>
+    <div id="events-list" class="row g-3"></div>
+    <p id="no-results" class="alert alert-info" hidden>لا توجد فعاليات مطابقة. جرّب تغيير الفلاتر أو مسحها.</p>
+</section>
+<section aria-labelledby="suggest-heading">
+    <h2 id="suggest-heading">هل لديك اقتراح لفعالية؟</h2>
+    <p>راجع <a href="about.html">سياسات تقديم الفعاليات</a> ثم أضف عنوان الفعالية ووصفها وموعدها ومكانها في <a href="contact.html">نموذج التواصل</a>.</p>
+    <p class="demo-note">تعرّف إلى <a href="index.html#events-note">طبيعة الفعاليات المعروضة في الدليل</a>.</p>
+</section>
+<noscript><p class="alert alert-warning">يرجى تفعيل JavaScript لعرض الفعاليات واستخدام البحث والنموذج.</p></noscript>
+</main>
+<footer>
+        <p>دليل فعاليات الجامعة الافتراضية السورية</p>
+        <p >للتواصل معنا: <a href="contact.html">صفحة اتصل بنا</a> | حسابات الجامعة: <a href="https://www.facebook.com/svuonline.org">فيسبوك</a> · <a href="https://t.me/Syrianvirtualuniversity">تلغرام</a></p>
+        <p> @2026 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>

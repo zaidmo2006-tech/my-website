@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفعالية | دليل فعاليات الجامعة الافتراضية السورية</title>
+    
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header> 
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html">
+                دليل فعاليات الجامعة الافتراضية السورية
+            </a>
+            <a href="index.html">الرئيسية</a>
+            <a href="events.html">الفعاليات</a>
+            <a href="about.html">عن الدليل</a>
+            <a href="contact.html">اتصل بنا</a>
+
+        </div>
+    </nav>
+  <img src="assets/img/photo_2026-10-21_16-14-43.jpg" alt="شعار الجامعة" class="logo">
+  </header>
+<main class="container site-main">
+
+<a href="events.html" class="back-link">العودة إلى جميع الفعاليات</a>
+<div id="event-missing" class="alert alert-warning mt-4" hidden><h1>الفعالية غير موجودة</h1><p>هذا المعرّف لا يطابق أي فعالية. اختر فعالية من <a href="events.html">القائمة</a>.</p></div>
+<div id="event-content">
+    <section aria-labelledby="event-title">
+        <h1 id="event-title">تفاصيل الفعالية</h1>
+        <p class="demo-note">احفظ الموعد في تقويمك أو شارك الفعالية مع زملائك.</p>
+        <div class="row g-4">
+            <div class="col-md-6"><img id="event-image" class="event-cover" src="assets/img/culture.jpg" alt="صورة توضيحية للفعالية"></div>
+            <div class="col-md-6">
+                <span id="event-category" class="badge category-badge"></span>
+                <p class="mt-3"><strong>التاريخ: </strong><span id="event-date"></span></p>
+                <p><strong>الوقت: </strong><span id="event-time"></span> (توقيت دمشق)</p>
+                <p><strong>المكان: </strong><span id="event-location"></span></p>
+                <p id="event-description"></p>
+                <div class="d-flex gap-2 flex-wrap"><button id="add-calendar" class="btn btn-primary" type="button">أضف للتقويم</button><button id="share-event" class="btn btn-outline-primary" type="button">شارك</button></div>
+            </div>
+        </div>
+    </section>
+    <section aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading">عن الفعالية ومعرض الصور</h2>
+        <p id="event-full-description"></p>
+        <div class="row g-3">
+            <figure class="col-md-6"><img id="gallery-image" class="gallery-image" src="assets/img/culture.jpg" alt="صورة توضيحية لنشاط الفعالية"><figcaption>من أجواء النشاط</figcaption></figure>
+            <figure class="col-md-6"><img class="gallery-image" src="assets/img/meeting.jpg" alt="رسم توضيحي لمساحة لقاء الطلاب"><figcaption>مساحة لقاء الطلاب</figcaption></figure>
+        </div>
+    </section>
+    <section aria-labelledby="map-heading">
+        <h2 id="map-heading">مكان إقامة الفعالية</h2>
+        <p id="map-description"></p>
+        <img id="event-map" class="map-image" src="assets/img/damascus-map.png" alt="خريطة عامة لمدينة دمشق" style="aspect-ratio: 20 / 9; object-fit: cover;">
+        <p id="map-credit"><small><a id="map-source" href="https://commons.wikimedia.org/wiki/File:Location_map_Syria_Damascus.png">مصدر الخريطة (2011)</a>: Dr. Blofeld / © OpenStreetMap contributors — <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</small></p>
+    </section>
+    <section aria-labelledby="related-heading"><h2 id="related-heading">فعاليات ذات صلة</h2><div id="related-events" class="row g-3"></div></section>
+</div>
+<noscript><p class="alert alert-warning">يرجى تفعيل JavaScript لعرض الفعاليات واستخدام البحث والنموذج.</p></noscript>
+</main>
+<footer>
+        <p>دليل فعاليات الجامعة الافتراضية السورية</p>
+        <p >للتواصل معنا: <a href="contact.html">صفحة اتصل بنا</a> | حسابات الجامعة: <a href="https://www.facebook.com/svuonline.org">فيسبوك</a> · <a href="https://t.me/Syrianvirtualuniversity">تلغرام</a></p>
+        <p> @2026 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
